@@ -12,12 +12,27 @@
 	<script src="./index_files/9964.js.下載" async="" type="text/javascript"></script>
 	<script async="" src="./index_files/js"></script>
 	<script>
-		var CUTOFF = 710;
-		var RECORD = 863;
+		var CUTOFF = 861.5;
+		var RECORD = 905;
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-WVK41JBQ8K');
+
+  // Update text dynamically after the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    // Replace placeholders in the HTML
+    document.querySelectorAll(".cutoff").forEach(el => {
+      el.textContent = CUTOFF;
+    });
+  });
+  // Update text dynamically after the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    // Replace placeholders in the HTML
+    document.querySelectorAll(".record").forEach(el => {
+      el.textContent = RECORD;
+    });
+  });
 	</script>
 
 	<title>徵女友</title>
@@ -7736,7 +7751,7 @@
 								跟我交往的好處: 妳要什麼都給妳 會特別珍惜妳 聽妳分享心事 會越來越喜歡妳 絕不會提分手<br>
 								<br>
 								條件：<br>
-								以下的加起來超過710分的女生歡迎來告訴我你吸引我的地方<br />
+								以下的加起來超過<span class="cutoff"></span>分的女生歡迎來告訴我你吸引我的地方<br />
 								<br />
 								無壓力交友。只要妳2天沒有傳訊息，我就會刪除妳，絕不糾纏或騷擾。<br />
 								
@@ -8033,12 +8048,13 @@ function getSelectedTraits() {
 												<div style="display: flex; align-items: center;">
 													<input type="number" name="age" id="age_input_0" class="tool-input" min="1" max="145" step="1" value="" placeholder="Enter age">
 													<span class="points" style="margin-left: 10px;">+0</span>
-
+	
 												</div>
 												<span id="warning_icon_0" style="display:none; color: red; font-size: 20px; margin-left: 10px;">&#9888;</span>
-												<span id="warning_message_0" class="warning-message" style="display:none; color: red; font-size: 12px; margin-left: 10px;">這個數值通常是17到25，請檢查您的輸入是否正確。若確定正確請忽略此警告。</span>
+												<span id="warning_message_0" class="warning-message" style="display:none; color: red; font-size: 12px; margin-left: 10px;">這個數值通常是20到25，請檢查您的輸入是否正確。若確定正確請忽略此警告。請輸入正確年紀。</span>
 
 											</div>
+											<span style="color: red; font-size: 14px; margin-left: 10px;">必填。嚴禁謊報。</span>
 										</div>
 
 
@@ -8613,7 +8629,7 @@ function getSelectedTraits() {
 
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
-												<h3>喜愛中國文化</h3>
+												<h3>喜愛中國文化 (例如古裝、國樂、詩詞曲、書法、扯鈴)</h3>
 											</div>
 											<div class="col-xs-6 col-sm-3">
 												<div class="tool-option">
@@ -8847,7 +8863,25 @@ function getSelectedTraits() {
 
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
-												<h3>成功被我帶到陽明山頂操場</h3>
+												<h3>粉絲&gt;1000人</h3>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_fans" value="0" id="trait_fans_n" class="tool-input">
+													<label for="trait_fans_n">No</label>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_fans" value="50" id="trait_fans_y" class="tool-input">
+													<label for="trait_fans_y">Yes<span class="points">+50</span></label>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tool-container container-input container-3 row">
+											<div class="col-xs-12 col-sm-6">
+												<h3>已經成功被我帶到陽明山頂操場</h3>
 											</div>
 											<div class="col-xs-6 col-sm-3">
 												<div class="tool-option">
@@ -9025,6 +9059,24 @@ function getSelectedTraits() {
 											</div>
 										</div>
 
+					                    <div class="tool-container container-input container-3 row">
+											<div class="col-xs-12 col-sm-6">
+												<h3>月經正常、規律、很少不適</h3>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_good_MC" value="0" id="trait_good_MC_n" class="tool-input">
+													<label for="trait_good_MC_n">No</label>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_good_MC" value="15" id="trait_good_MC_y" class="tool-input">
+													<label for="trait_good_MC_y">Yes<span class="points">+15</span></label>
+												</div>
+											</div>
+					                    </div>
+										
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
 												<h3>沒有過敏</h3>
@@ -9225,7 +9277,7 @@ function getSelectedTraits() {
 
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
-												<h3>有身心障礙的兄弟姊妹</h3>
+												<h3>有身心障礙的兄弟姊妹（注意題目是有不是沒有）</h3>
 											</div>
 											<div class="col-xs-6 col-sm-3">
 												<div class="tool-option">
@@ -9406,6 +9458,24 @@ function getSelectedTraits() {
 
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
+												<h3>會跳舞</h3>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_56_7" value="0" id="trait_top_high_school_n" class="tool-input">
+													<label for="trait_top_high_school_n_7">No</label>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_56_7" value="11" id="trait_top_high_school_y" class="tool-input">
+													<label for="trait_top_high_school_y_7">Yes<span class="points">+11</span></label>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tool-container container-input container-3 row">
+											<div class="col-xs-12 col-sm-6">
 												<h3>想出國</h3>
 											</div>
 											<div class="col-xs-6 col-sm-3">
@@ -9416,8 +9486,8 @@ function getSelectedTraits() {
 											</div>
 											<div class="col-xs-6 col-sm-3">
 												<div class="tool-option">
-													<input type="radio" name="trait_58" value="35" id="trait_want_to_go_abroad_y" class="tool-input">
-													<label for="trait_want_to_go_abroad_y">Yes<span class="points">+35</span></label>
+													<input type="radio" name="trait_58" value="47" id="trait_want_to_go_abroad_y" class="tool-input">
+													<label for="trait_want_to_go_abroad_y">Yes<span class="points">+47</span></label>
 												</div>
 											</div>
 										</div>
@@ -9526,6 +9596,24 @@ function getSelectedTraits() {
 												<div class="tool-option">
 													<input type="radio" name="trait_62_1" value="3" id="trait_elegant_y" class="tool-input">
 													<label for="trait_elegant_y_1">Yes<span class="points">+3</span></label>
+												</div>
+											</div>
+										</div>
+
+										<div class="tool-container container-input container-3 row">
+											<div class="col-xs-12 col-sm-6">
+												<h3>有自信</h3>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_62_1_1" value="0" id="trait_elegant_n" class="tool-input">
+													<label for="trait_elegant_n_1_1">No</label>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_62_1_1" value="10" id="trait_elegant_y" class="tool-input">
+													<label for="trait_elegant_y_1_1">Yes<span class="points">+10</span></label>
 												</div>
 											</div>
 										</div>
@@ -9799,6 +9887,7 @@ function getSelectedTraits() {
 												</div>
 											</div>
 										</div>
+										
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
 												<h3>住處離衛生福利部桃園醫院不到20分鐘</h3>
@@ -9837,6 +9926,24 @@ function getSelectedTraits() {
 
 										<div class="tool-container container-input container-3 row">
 											<div class="col-xs-12 col-sm-6">
+												<h3>非常認識自己</h3>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_self" value="0" id="trait_self_n" class="tool-input">
+													<label for="trait_self_n">No</label>
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-3">
+												<div class="tool-option">
+													<input type="radio" name="trait_self" value="13" id="trait_self_y" class="tool-input">
+													<label for="trait_self_y">Yes<span class="points">+13</span></label>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tool-container container-input container-3 row">
+											<div class="col-xs-12 col-sm-6">
 												<h3>嫁雞隨雞，嫁狗隨狗</h3>
 											</div>
 											<div class="col-xs-6 col-sm-3">
@@ -9867,8 +9974,8 @@ function getSelectedTraits() {
 												</h3>
 												<p>category is based on score</p>
 												<ul>
-													<li>&gt;710分: 妳是我的理想型！</li>
-													<li>&gt;863分: 破紀錄！</li>
+													<li>&gt;<span class="cutoff"></span>分: 妳是我的理想型！</li>
+													<li>&gt;<span class="record"></span>分: 破紀錄！</li>
 												</ul>
 											</div>
 										</div>
@@ -10630,7 +10737,7 @@ function getSelectedTraits() {
 	const warningIcon = document.getElementById('warning_icon_0');
 	const pointsElement = document.querySelector('.points');
 
-    if (ageValue >= 17 && ageValue <= 25) {
+    if (ageValue >= 20 && ageValue <= 25) {
         console.log('Age is within the valid range.');
         // Additional actions like enabling submit button can be added here
 		warningMessage.style.display = 'none';
@@ -10642,7 +10749,7 @@ function getSelectedTraits() {
 		warningIcon.style.display = 'inline';
     }
 
-			pointsElement.textContent = '+' + (23 - ageValue) * 12;
+			pointsElement.textContent = '+' + (23 - ageValue) * 16;
 
             // Check if the hidden input already exists
             if ($('.tool-input.hidden-checkbox_0').length === 0) {
@@ -10658,8 +10765,8 @@ function getSelectedTraits() {
                     }
                 });
 
-                // Calculate the value as (23 - ageValue) * 12
-                var calculatedValue = (23 - ageValue) * 12;
+                // Calculate the value as (22 - ageValue) * 12
+                var calculatedValue = (23 - ageValue) * 16;
 
                 // Create the hidden input element
                 var hiddenInput = $('<input>', {
@@ -10676,7 +10783,7 @@ function getSelectedTraits() {
                 $('body').append(hiddenContainer);
             } else {
                 // If the hidden input exists, update its value
-                var calculatedValue = (23 - ageValue) * 12;
+                var calculatedValue = (23 - ageValue) * 16;
                 $('.tool-input.hidden-checkbox_0').val(calculatedValue);
             }
 
